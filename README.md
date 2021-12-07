@@ -1,1 +1,1 @@
-https://github.com/dantereto/holbertonschool-interview.git
+holbertonschool-interview
