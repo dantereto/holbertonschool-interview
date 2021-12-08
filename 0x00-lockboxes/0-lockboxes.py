@@ -2,7 +2,9 @@
 
 def canUnlockAll(boxes):
     """ lockcoxes"""
-    if (not boxes or len(boxes) == 0):
+    if not boxes:
+        return False
+    if len(boxes) == 0:
         return False
     keys = []
     keys.append(0)
