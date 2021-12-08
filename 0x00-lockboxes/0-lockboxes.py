@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
+
 def canUnlockAll(boxes):
-    """ lockcoxes"""
     if not boxes:
         return False
     if len(boxes) == 0:
@@ -9,11 +9,10 @@ def canUnlockAll(boxes):
     keys = []
     keys.append(0)
     for key in keys:
-        news = boxes[key]
-        for new in news:
-            if new not in keys and new < len(boxes):
-                keys.append(new)
+        new_keys = boxes[key]
+        for new_key in new_keys:
+            if new_key not in keys and new_key < len(boxes):
+                keys.append(new_key)
     if len(keys) == len(boxes):
         return True
-    else:
-        return False
+    return False
