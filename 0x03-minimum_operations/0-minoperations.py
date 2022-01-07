@@ -3,6 +3,7 @@
 function
 """
 
+
 def minOperations(n):
     """
     funcion
