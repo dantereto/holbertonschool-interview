@@ -3,14 +3,10 @@
 function
 """
 
-
 def minOperations(n):
     """
     funcion
     """
-
-    if (n < 2):
-        return 0
 
     if (not isinstance(n, int)):
         return 0
