@@ -80,7 +80,7 @@ void print_grid1(int grid[3][3])
  * sandpiles_sum - Sums the sand piles
  * @grid1: First grid
  * @grid2: Second grid
- * Return:
+ * Return: 0
  */
 void sandpiles_sum(int grid1[3][3], int grid2[3][3])
 {
