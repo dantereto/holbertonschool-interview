@@ -15,7 +15,7 @@ listint_t *temp;
 temp = *head;
 if (temp == NULL)
 return (1);
-if (temp != NULL)
+else
 {
 for (siz = 0; temp != NULL; temp = temp->next, siz++)
 array[siz] = temp->n;
