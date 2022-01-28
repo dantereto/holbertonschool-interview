@@ -1,8 +1,6 @@
 #!/usr/bin/python3
-"""create the function"""
-
+"""create the function """
 import sys
-
 
 i = 0
 size = 0
