@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" create teh funciton """
+""" create the funciton """
 import sys
 
 
