@@ -11,10 +11,10 @@ def validUTF8(data):
     for n in data:
         byte = format(n, '#010b')[-8:]
         if number == 0:
-            if number > 4 or number == 1:
-                return False
             if byte[0] == '1':
                 number = len(byte.split('0')[0])
+            if number > 4 or number == 1:
+                return False
             if number == 0:
                 continue
         else:
