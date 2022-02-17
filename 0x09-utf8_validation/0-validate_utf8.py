@@ -5,6 +5,7 @@ Valid utf
 
 
 def validUTF8(data):
+    """start function"""
 
     number = 0
     for n in data:
