@@ -3,8 +3,10 @@
 #include "slide_line.h"
 
 /**
- * is_palindrome - check if the linked list is a palindrome
- * @head: head of list
+ * slide_line - check if the linked list is a palindrome
+ * @line: line of array
+ * @size: nvalues
+ * @direction: directiom of slide
  * Return: 0
  */
 int slide_line(int *line, size_t size, int direction)
