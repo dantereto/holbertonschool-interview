@@ -2,6 +2,7 @@
 """ create the funciton """
 import sys
 
+
 def argv_parse():
     if len(sys.argv) != 2:
         print("Usage: nqueens N")
@@ -14,7 +15,8 @@ def argv_parse():
         print("N must be at least 4")
         sys.exit(1)
     return n
-    
+
+
 def nqueens(queens, diff, sum):
     p = len(queens)
     if p == n:
