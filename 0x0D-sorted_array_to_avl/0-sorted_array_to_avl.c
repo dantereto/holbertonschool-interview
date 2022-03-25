@@ -23,9 +23,9 @@ avl_t *create_node(int n, avl_t *point)
 }
 
 /**
- * binary_traversal - traverse array in binary
- * @par: pointer to parent node
- * @a: array of values
+ * binary_traversal - traverse
+ * @point: pointer to parent node
+ * @array: array of values
  * @left: left index
  * @right: right index
  *
