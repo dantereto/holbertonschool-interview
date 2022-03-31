@@ -3,12 +3,13 @@
 #include "search.h"
 
 /**
- * linear_skip - Linear ski
+ * linear_skip - Linear skip
  * @list: list to check
  * @value: the value to found
  *
  * Return: 0
  */
+ 
 skiplist_t *linear_skip(skiplist_t *list, int value)
 {
 skiplist_t *copy;
