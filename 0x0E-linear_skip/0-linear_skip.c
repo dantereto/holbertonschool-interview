@@ -32,7 +32,7 @@ break;
 }
 copy = copy->express;
 }
-printf("Value found between indexes [%lu] and [%lu]\n", 
+printf("Value found between indexes [%lu] and [%lu]\n",
 p->index, copy->index);
 while (p && p->index <= copy->index)
 {
