@@ -7,7 +7,7 @@
  *
  * @list: Pointer to the head node of the list
  * @value: value to check
- * Return: a pointer on the first node where value is located
+ * Return: 0
  */
 skiplist_t *linear_skip(skiplist_t *list, int value)
 {
@@ -32,7 +32,7 @@ skiplist_t *linear_skip(skiplist_t *list, int value)
         copy = copy->express;
     }
     printf("Value found between indexes [%lu] and [%lu]\n",
-            p->index, copy->index);
+        p->index, copy->index);
     while (p && p->index <= copy->index)
     {
         printf("Value checked at index [%lu] = [%d]\n", p->index, p->n);
