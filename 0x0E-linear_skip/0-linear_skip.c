@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include "search.h"
 
-
 /**
  * linear_skip - Linear search in a skip list
  *
@@ -27,13 +26,13 @@ skiplist_t *linear_skip(skiplist_t *list, int value)
         if (copy->express == NULL)
         {
             while (copy->next)
-            copy = copy->next;
+                copy = copy->next;
             break;
         }
         copy = copy->express;
     }
     printf("Value found between indexes [%lu] and [%lu]\n",
-    p->index, copy->index);
+            p->index, copy->index);
     while (p && p->index <= copy->index)
     {
         printf("Value checked at index [%lu] = [%d]\n", p->index, p->n);
