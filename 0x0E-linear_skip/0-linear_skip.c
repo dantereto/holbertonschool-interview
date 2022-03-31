@@ -38,7 +38,7 @@ while (p && p->index <= copy->index)
 printf("Value checked at index [%lu] = [%d]\n", p->index, p->n);
 if (p->n == value)
 return (p);
-p = p->next;
+    p = p->next;
 }
 return (NULL);
 }
