@@ -3,7 +3,6 @@
 #include "search.h"
 
 /**
-*
 * linear_skip - Linear skip
 * @list: list to check
 * @value: the value to found
