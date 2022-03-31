@@ -20,7 +20,7 @@ copy = list->express;
 p = list;
 while (copy != NULL)
 {
-printf("Value checked [%lu] at index [%d]\n", copy->index, copy->n);
+printf("Value checked at index [%lu] = [%d]\n", copy->index, copy->n);
 if (copy->n >= value)
 break;
 p = copy;
@@ -36,7 +36,7 @@ printf("Value found between indexes [%lu] and [%lu]\n",
 p->index, copy->index);
 while (p && p->index <= copy->index)
 {
-printf("Value checked [%lu] at index [%d]\n", p->index, p->n);
+printf("Value checked at index [%lu] = [%d]\n", p->index, p->n);
 if (p->n == value)
 return (p);
 p = p->next;
