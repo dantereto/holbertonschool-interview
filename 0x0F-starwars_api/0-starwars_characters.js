@@ -6,7 +6,7 @@ const ac = process.argv.slice(2);
 request.get(`https://swapi-api.hbtn.io/api/films/${ac}/`, async (_error, response, body) => {
   const characters = JSON.parse(body).characters;
   for (const character of characters) {
-    const charac = await new Promise((resolve, reject) => {
+    const chara = await new Promise((resolve, reject) => {
       request(character, (errors, responses, bodys) => {
         if (errors) {
           reject(errors);
@@ -15,6 +15,6 @@ request.get(`https://swapi-api.hbtn.io/api/films/${ac}/`, async (_error, respons
         }
       });
     });
-    console.log(charac);
+    console.log(chara);
   }
 });
