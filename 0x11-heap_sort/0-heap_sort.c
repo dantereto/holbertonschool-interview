@@ -34,7 +34,9 @@ void heap_sort(int *array, size_t size)
 {
     for (int i = size / 2 - 1; i >= 0; i--)
       heapify(arr, size, i);
-    for (int i = n - 1; i >= 0; i--) {
-      swap(&arr[0], &arr[i]);
+    for (int i = n - 1; i >= 0; i--) 
+    {
+      swap(&array[0], &array[i]);
     heapify(arr, i, 0);
+    }
 }
