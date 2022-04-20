@@ -3,17 +3,27 @@
 #include "sort.h"
 
 /**
- * linear_skip - Linear search in a skip list
+ * swap - Swap two ponters
  *
- * @list: Pointer to the head node of the list
- * @value: value to check
+ * @a: Pointer
+ * @b: Pointer
  * Return:0
  */
-void swap(int *a, int *b) {
+void swap(int *a, int *b) 
+{
 int temp = *a;
 *a = *b;
 *b = temp;
 }
+/**
+ * heapify - help the heap checking left and tight
+ *
+ * @array: the array
+ * @n: the number
+ * @i: the largest element
+ * @size: the size of the tree
+ * Return:0
+ */
 void heapify(int *array, int n, int i, size_t size)
 {
 int largest = i;
@@ -30,12 +40,19 @@ print_array(array, size);
 heapify(array, n, largest, size);
 }
 }
+/**
+ * heap_sort - Heap sort
+ *
+ * @array: The array
+ * @size: Size of the array
+ * Return:0
+ */
 void heap_sort(int *array, size_t size)
 {
 int i = 0;
 for (i = size / 2 ; i > 0; i--)
 heapify(array, size, i - 1, size);
-for (i = size - 1; i > 0; i--) 
+for (i = size - 1; i > 0; i--)
 {
 swap(&array[0], &array[i]);
 print_array(array, size);
