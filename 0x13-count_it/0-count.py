@@ -3,16 +3,11 @@
 import requests
 
 
-def make_dictionary(word_list, dic):
-    """ make dictionary from word list """
-    for word in word_list:
-        dic[word] = 0
-
-
 def count_words(subreddit, word_list, dic={}, after=None):
     """ count words from list in subreddit titles """
     if len(dic) == 0:
-        make_dictionary(word_list, dic)
+        for word in word_list:
+            dic[word] = 0
     try:
         u = 'https://api.reddit.com/r/{}/hot'.format(subreddit)
         h = {'User-Agent': 'test'}
