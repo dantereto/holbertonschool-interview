@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-""" Contains the count_words function. """
+"""Comment"""
 import requests
 
 
 def count_words(subreddit, word_list, after=None, dic=None):
-    """ Counts keywords from the titles of hot posts on a subreddit. """
+    """Count"""
     if dic is None:
         word_list = [word.lower() for word in word_list]
         dic = {key: 0 for key in word_list}
