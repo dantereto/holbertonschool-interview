@@ -43,9 +43,10 @@ void heap_array(heap_t **array, heap_t *node, int index)
 void rebuild(heap_t *node)
 {
 	int tmp;
+
 	if (node->left == NULL)
 		return;
-	else if (node->left->n >= node->right->n || node->right == NULL)
+	else if (node->right == NULL || node->left->n >= node->right->n)
 	{
 		if (node->n < node->left->n)
 		{
