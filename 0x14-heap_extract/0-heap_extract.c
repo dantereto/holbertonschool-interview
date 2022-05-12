@@ -3,38 +3,6 @@
 #include <stdio.h>
 
 /**
- * tree_size - return size of tree
- * @root: root of tree
- * Return: 0
- */
-
-int tree_size(heap_t *root)
-{
-	if (root == NULL)
-		return (0);
-	else
-		return (tree_size(root->left) + 1 + tree_size(root->right));
-}
-
-/**
- * heap_array - array for heap
- * @array: new array
- * @node: node
- * @index: the index
- * Return: 0
- */
-
-void heap_array(heap_t **array, heap_t *node, int index)
-{
-	array[index] = node;
-	if (node)
-	{
-		heap_array(array, node->left, (index * 2) + 1);
-		heap_array(array, node->right, (index * 2) + 2);
-	}
-}
-
-/**
  * rebuild - revuild the heap
  * @node : the node
  * Return: 0
@@ -66,6 +34,38 @@ void rebuild(heap_t *node)
 		}
 		rebuild(node->right);
 	}
+}
+
+/**
+ * heap_array - array for heap
+ * @array: new array
+ * @node: node
+ * @index: the index
+ * Return: 0
+ */
+
+void heap_array(heap_t **array, heap_t *node, int index)
+{
+	array[index] = node;
+	if (node)
+	{
+		heap_array(array, node->left, (index * 2) + 1);
+		heap_array(array, node->right, (index * 2) + 2);
+	}
+}
+
+/**
+ * tree_size - return size of tree
+ * @root: root of tree
+ * Return: 0
+ */
+
+int tree_size(heap_t *root)
+{
+	if (root == NULL)
+		return (0);
+	else
+		return (tree_size(root->left) + 1 + tree_size(root->right));
 }
 
 /**
