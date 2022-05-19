@@ -49,6 +49,11 @@ int main(int argc, char *argv[])
         printf("Error\n");
 		exit(98);
     }
+    if (argv[1][0] == '0' || argv[2][0] == '0')
+    {
+        printf("0\n");
+        return (0);
+    }
     number = _strlen(argv[1]), number2 = _strlen(argv[2]);
     len = number + number2;
     total = calloc(len, sizeof(int *));
