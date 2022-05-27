@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-""" Given an n x n 2D matrix, rotate it 90 degrees clockwise """
+"""Start function"""
 
 
 def rotate_2d_matrix(matrix):
-    """ Given an n x n 2D matrix, rotate it 90 degrees clockwise """
+    """matrix"""
     first = 0
     last = len(matrix) - 1
     while first < last:
