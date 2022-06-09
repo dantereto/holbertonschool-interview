@@ -40,13 +40,14 @@ void final_merge(int *array, int *left, int *right, size_t size)
 }
 
 /**
- * find_listint_loop -fins the loop
- * @head: head of the list
+ * merge_sort - merge sort
+ * @array: the array
+ * @size: the size of array
  * Return: NULL.
  */
 void merge_sort(int *array, size_t size)
 {
-    size_t mid = size / 2, i, j;
+size_t mid = size / 2, i, j;
 	int left[10000];
 	int right[10000];
 
