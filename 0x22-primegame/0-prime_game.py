@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Program that performs prime game"""
+"""Check teh winner"""
 
 
 def isWinner(x, nums):
